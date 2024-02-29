@@ -1,13 +1,17 @@
 import prismadb from "@/lib/prismadb";
+import { Children } from "react";
 
 interface DashboardPageProps {
-    params: { storeId: string }
+    params: { storeId: string },
+    children: React.ReactNode
 }
 
 
 
 const DashboardPage: React.FC<DashboardPageProps> = async ({
-    params
+    params,
+    children
+
 }) =>{
 
     const store = await prismadb.store.findFirst({
@@ -19,6 +23,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({
     return(
         <div>
             Tienda activa: {store?.name}
+            {children}
         </div>
     );
 }
