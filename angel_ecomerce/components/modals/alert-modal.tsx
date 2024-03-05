@@ -9,6 +9,7 @@ interface AlerModalProps {
     onClose: () => void;
     onConfirm: () => void;
     loading: boolean;
+    
 }
 
 export const AlertModal: React.FC<AlerModalProps> = ({

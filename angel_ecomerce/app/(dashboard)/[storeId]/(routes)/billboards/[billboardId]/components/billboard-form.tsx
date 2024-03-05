@@ -85,7 +85,7 @@ export const BillboardForm: React.FC<BillboardProps> = ({
             setLoading(true);
             await axios.delete(`/api/${params.storeId}/billboards/${params.billboardId}`)
             router.refresh();
-            router.push("/");
+            router.push(`${params.storeId}/billboards`);
             toast.success("Billboard borrada.")
 
 
