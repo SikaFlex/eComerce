@@ -16,7 +16,7 @@ const SetupPage = () => {
   }, [isOpen, onOpen]);
 
   return (
-    <div>ENSEÑATE ALGO MANIN</div>
+    <div>No hay tiendas</div>
   )
 };
  

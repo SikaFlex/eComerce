@@ -14,7 +14,7 @@ const page = async ({
         storeId: params.storeId
       },
       orderBy:{
-        createAt: 'desc'
+        createdAt: 'desc'
       }
       
     });
@@ -23,7 +23,7 @@ const page = async ({
     const formattedBillboards: BillboardColumn[] = billboard.map( (item) => ({
       id: item.id,
       label: item.label,
-      createAt: format(item.createAt, "MMMM do, yyyy")
+      createAt: format(item.createdAt, "MMMM do, yyyy")
     }));
   
 

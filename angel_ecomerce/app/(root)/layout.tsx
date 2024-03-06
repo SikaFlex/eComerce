@@ -26,7 +26,7 @@ export default async function SetupLayout({
 
   return (
     <>
-    <div>El de fuera</div>
+    <div>root</div>
       {children}
     </>
   );
