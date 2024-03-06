@@ -24,7 +24,7 @@ export const ApiList: React.FC<ApilistProps> = ({
             <ApiAlert
                 title="GET"
                 variant="public"
-                description={`${baseUrl}/billboards`} />
+                description={`${baseUrl}/${entityName}`} />
             <ApiAlert
                 title="GET"
                 variant="public"
