@@ -32,8 +32,12 @@ export const MainNav = ({
             href: `/${params.storeId}/categories`,
             label: 'Categorias',
             active: pathname === `/${params.storeId}/categories`
+        },
+        {
+            href: `/${params.storeId}/sizes`,
+            label: 'Sizes',
+            active: pathname === `/${params.storeId}/sizes`
         }
-        
     ];
 
 
